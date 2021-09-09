@@ -1,0 +1,27 @@
+{
+	"name": "qr-test",
+	"version": "1.0.0",
+	"description": "QR practice",
+	"main": "./src/index.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "tsc-watch --onsuccess \"node dist/index.js\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/tyufjvbn2/QR-test.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/tyufjvbn2/QR-test/issues"
+	},
+	"homepage": "https://github.com/tyufjvbn2/QR-test#readme",
+	"dependencies": {
+		"@types/express": "^4.17.13",
+		"express": "^4.17.1",
+		"mongoose": "^6.0.5",
+		"tsc-watch": "^4.5.0",
+		"typescript": "^4.4.2"
+	}
+}
