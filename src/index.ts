@@ -49,9 +49,21 @@ app.post("/qr", async (req, res) => {
 	);
 	console.log("qr check", testQR);
 
+	//  ------------ test  --------------  //
+	const utc = new Date().getTime();
+
+	console.log("time", new Date(utc + 9 * 60 * 60 * 1000));
+	// const thisTest = await QRcode.toFileStream(
+	// 	stream, "test",
+	// );
+
+	// console.log("another string", thisTest);
+
+	//  ------------ test  --------------  //
+
 	// res.json({ message: "QR sent!", data: testQR });
 });
 
-app.listen(4444, () => {
+app.listen(4443, () => {
 	console.log("Server is running on http://localhost:4444");
 });
